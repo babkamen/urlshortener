@@ -25,6 +25,10 @@ db.on('open', function() {
 	assert.equal(ShortUrl.collection.findOne().constructor, require('bluebird'));
 });
 
+app.get('/', function(req, res) {
+	res.sendFile(__dirname + '/index.html');
+});
+
 
 app.get('/new*', function(req, res) {
 	var url = req.params[0].substring(1);
