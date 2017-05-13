@@ -1,6 +1,5 @@
 var express = require('express');
 var app = express();
-var moment = require('moment');
 var assert = require("assert");
 var mongoose = require('mongoose');
 var shortid = require('shortid');
