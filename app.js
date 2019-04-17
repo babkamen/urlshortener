@@ -4,7 +4,7 @@ var assert = require("assert");
 var mongoose = require('mongoose');
 var shortid = require('shortid');
 
-var uri = process.env.MONGOLAB_URI||'mongodb://localhost/urls';
+var uri = process.env.MLAB_URI||'mongodb://localhost/urls';
 // Use bluebird
 var options = {
 	promiseLibrary: require('bluebird')
